@@ -6,10 +6,33 @@
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Custom styling for education section similar to work experience */
+        /* Styling for name and profile picture */
+        .profile-picture {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 38%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .name {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Make the profile picture responsive */
+        @media (max-width: 768px) {
+            .profile-picture {
+                max-width: 100%; /* On smaller screens, image will take full width */
+            }
+        }
+
+        /* Styling for education section */
         .education-container {
-            margin: 20px;
-            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
         }
 
         .school-name {
@@ -19,6 +42,7 @@
 
         .education-date {
             float: right;
+            font-weight: bold;
         }
 
         p {
@@ -27,7 +51,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="index.html">About Me</a></li>
@@ -41,7 +64,11 @@
     <!-- About Me Section -->
     <section>
         <h1>About Me</h1>
-        
+
+        <!-- Profile picture and name -->
+        <img src="profile.jpg" alt="Binyu Wang" class="profile-picture">
+        <div class="name">Binyu Wang (王彬宇)</div>
+
         <h2><strong>Professional Summary</strong></h2>
         <p>
             As a dedicated Master's student in Computer Science with a specialization in Cybersecurity at Boston University, I have charted a unique path in my academic and career journey. Initially targeting a career in business, my undergraduate studies spanned a diverse range of subjects from accounting and financial fundamentals to artificial intelligence and database management. However, during my second year and subsequent exchange in the UK, I pivoted towards computer science, embracing the challenges and rigors this field demanded.
@@ -54,7 +81,7 @@
         </p>
 
         <h2><strong>EDUCATION</strong></h2>
-        
+
         <div class="education-container">
             <p>
                 <span class="school-name">Boston University, Charles River Campus</span>
