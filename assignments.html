@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDropdown() {
+            var content = document.getElementById("assignments-content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="work-experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Assignments</h1>
+        <div id="assignments" onclick="toggleDropdown()">Assignments List ▼</div>
+        <div id="assignments-content">
+            <ul>
+                <li>
+                    Assignment 0: Dummy Assignment
+                    <button onclick="window.location.href='https://github.com/username/bu_username-assignment-0'">GitHub Link</button>
+                </li>
+                <li>
+                    Assignment 1: Coming soon
+                    <button>GitHub Link</button>
+                </li>
+                <!-- Add more assignments here -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

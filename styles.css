@@ -1,0 +1,71 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Assignments Dropdown Menu */
+#assignments {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#assignments-content {
+    display: none;
+    margin-top: 10px;
+}
+
+#assignments-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#assignments-content ul li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#assignments-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#assignments-content ul li button {
+    float: right;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#assignments-content ul li button:hover {
+    background-color: #0056b3;
+}
